@@ -1,0 +1,9 @@
+[submodule "repos/vertex-texture-cache"]
+	path = repos/vertex-texture-cache
+	url = https://github.com/sneha-belkhale/vertex-texture-cache
+[submodule "repos/360-photo-to-video"]
+	path = repos/360-photo-to-video
+	url = https://github.com/sneha-belkhale/360-photo-to-video
+[submodule "repos/gender-graph"]
+	path = repos/gender-graph
+	url = https://github.com/Kif11/gender-graph
