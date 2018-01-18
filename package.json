@@ -3,7 +3,9 @@
   "description": "",
   "homepage": "https://codercat.club",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.2",
     "react": "16.1.1",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "16.1.1",
     "react-scripts": "1.0.10"
   },

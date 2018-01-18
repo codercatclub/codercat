@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 :root {
-  --views-width: 690px;
+  --views-width: 678px;
   --proj-box-size: 220px;
 }
 
@@ -15,41 +15,66 @@ h1 {
   margin: 0px;
 }
 
+li {
+  list-style: none;
+}
+
 hr {
   border: none;
   height: 1px;
   background-color: rgba(51, 51, 51, 0.12);
 }
 
-#main-title {
-  font-size: 55px;
-  margin-bottom: 40px;
-  margin-top: 30px;
-  color: rgba(68, 68, 68, 0.7);
-}
-
-.view {
-  width: var(--views-width);
-  height: 100vh;
-  margin: auto;
-  overflow: hidden;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .main-container {
+  display: inline-block;
 }
 
 #app-view {
+  height: 100%;
+  margin-bottom: 100px;
 }
 
-#projects-view {
+#menu {
+  display: block;
+  height: 70px;
+  margin-top: 50px;
+}
 
+#menu-title {
+  display: block;
+  float: left;
+  font-size: 55px;
+  color: rgba(68, 68, 68, 0.7);
+}
+
+#menu-list {
+  display: block;
+  float: right;
+  margin-right: 10px;
+  margin-top: 36px;
+}
+
+.menu-list-item {
+  display: block;
+  float: right;
+  margin-left: 10px;
+}
+
+.menu-list-item:hover {
+  cursor: pointer;
+}
+
+#center-container {
+  width: var(--views-width);
+  margin: auto;
 }
 
 #project-container {
-  display: block;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-wrap: wrap; */
 }
 
 #scroll-down-btn-container {
@@ -64,13 +89,6 @@ hr {
   transform: rotate(45deg);
   border-right: 2px rgba(0, 0, 0, 0.5) solid;
   border-bottom: 2px rgba(0, 0, 0, 0.5) solid;
-}
-
-#about-view {
-  display: flex;
-  vertical-align: middle;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #about-container p {
@@ -119,6 +137,21 @@ hr {
   filter: grayscale(100%);
 }
 
+.contact-entry {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.social-media-links {
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.social-media-item {
+  margin: 3px;
+}
 
 @media (max-width: 800px) {
   :root {

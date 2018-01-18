@@ -1,11 +1,89 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+
 import './style.css';
+import './menu.css'
 
+import About from './about';
 
-class App extends Component {
-  constructor() {
-    super();
+class Menu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+      items: [
+        {id: 'about', name: 'About'},
+        {id: 'contact', name: 'Contact'},
+        {id: 'home', name: 'Codercat'}
+      ],
+      selectedItemId: 'home'
+    }
+  }
+  handleMenuItemClick(event) {
+    if (this.props.onMenuItemClick) {
+      this.props.onMenuItemClick(event.target.id);
+    }
+    this.setState({
+      selectedItemId: event.target.id
+    })
+  }
+  render() {
+    
+    
+    return (
+      <div id='menu'>
+        <h1 id='menu-title'>{this.state.title}</h1>
+        <ul id='menu-list'>
+          { this.state.items.map((i, index) => {
+            console.log("sel", this.state.selectedItemId, "i:", i.id);
+            return <li
+              className='menu-list-item' 
+              id={i.id} 
+              key={index}
+              style={this.state.selectedItemId === i.id ? {textDecoration: 'underline'} : {textDecoration: 'none'}}
+              onClick={this.handleMenuItemClick.bind(this)}> {i.name} </li>
+          }, this) }
+        </ul>
+      </div>
+    )
+  }
+}
+
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      contacts: [
+        {name: 'Sneha', email: 'sbelkhale@gmail.com '},
+        {name: 'Kirill', email: 'kovalewskiy@gmail.com'}
+      ],
+      copiedValue: 'blaa',
+      copied: false
+    }
+  }
+  render() {
+    return (
+      <div id='contact'>
+        <h1>Contact</h1>
+        { this.state.contacts.map(i => {
+          return <div>
+            <h2>{i.name}</h2>
+            <p className='contact-entry'> Email: {i.email}</p>
+            <CopyToClipboard className='contact-entry' text={i.email}>
+              <button>copy</button>
+            </CopyToClipboard>
+          </div>
+        }) }
+        
+      </div>
+    )
+  }
+}
+
+class ProjectsView extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
       projects: [{
         "name": "360 PHOTO TO VIDEO",
@@ -48,37 +126,92 @@ class App extends Component {
         "img": "img/photospheres.png ",
         "link": "photospheres.html"
       }]
+    }
+  }
+  render() {
+    return (
+      <div className='view' id='projects-view'>
+        <div className='main-container' id='project-container'>
+          { this.state.projects.map((i, index) => {
+            return (
+              <a id='project-box' href={i.link} key={index}>
+                <img src={i.img} alt={i.name} />
+                <h1 id='box-title'>{i.name}</h1>
+              </a>
+            );
+          }) }
+        </div>
+      </div>
+    )
+  }
+}
+
+class SocialViewPanel extends Component {
+  constructor() {
+    super();
+    this.state = {
+      data: [
+        {
+          name: 'kirill', 
+          github: 'https://github.com/kif11', 
+          instagram: 'https://instagram.com/kif11', 
+          twitter: 'https://twitter.com/kovalewskiy'
+        },
+        {
+          name: 'sneha', 
+          github: 'https://github.com/sneha-belkhale', 
+          instagram: 'https://www.instagram.com/snayss/',
+          twitter: 'https://twitter.com/snayyss'
+        }
+      ]
+    };
+  }
+  render() {
+    return (
+      <div id='social-media-panel'>
+        { this.state.data.map(i => {
+          return (
+            <div className='social-media-links'>
+              <span className='social-media-item'>{i.name}</span>
+              <a className='fa fa-github social-media-item' href={i.github} aria-hidden='true'></a>
+              <a className='fa fa-instagram social-media-item' href={i.instagram} aria-hidden='true'></a>
+              <a className='fa fa-twitter social-media-item' href={i.twitter} aria-hidden='true'></a>          
+            </div>
+          )
+        }) }
+      </div>
+    )
+  }
+}
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      page: 'home'
     };
   }
 
+  handleMenuItemClick (itemId) {
+    this.setState({page: itemId});
+  }
+
   render() {
+    let View = null;
+      switch (this.state.page) {
+        case 'home': View = <ProjectsView />; break;
+        case 'contact': View = <Contact />; break;
+        case 'about': View = <About />; break;
+        default: View = <ProjectsView />;
+      }
     return (
       <div id='app-view'>
-        <div className='view' id='projects-view'>
-          <h1 id='main-title'>codercat.</h1>
-          <div className='main-container' id='project-container'>
-            { this.state.projects.map((i, index) => {
-              return (
-                <a id='project-box' href={i.link} key={index}>
-                  <img src={i.img} alt={i.name} />
-                  <h1 id='box-title'>{i.name}</h1>
-                </a>
-              );
-            }) }
-          </div>
-          <div id='scroll-down-btn-container'>
-            <div id='scroll-down-btn'></div>
-          </div>
-        </div>
-        <hr />
-        <div className='view' id='about-view'>
-          <div className='main-container' id='about-container'>
-            <h1>About</h1>
-            <p>Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.</p>
-          </div>
+        <div id='center-container'>
+          <Menu onMenuItemClick={this.handleMenuItemClick.bind(this)}/>
+          {View}
+          <SocialViewPanel />
         </div>
       </div>
-
     );
   }
 }
