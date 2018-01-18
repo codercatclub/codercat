@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import './style.css';
-import './menu.css'
 
 import About from './about';
 
