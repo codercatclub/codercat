@@ -35,7 +35,6 @@ class Menu extends Component {
         <h1 id='menu-title'>{this.state.title}</h1>
         <ul id='menu-list'>
           { this.state.items.map((i, index) => {
-            console.log("sel", this.state.selectedItemId, "i:", i.id);
             return <li
               className='menu-list-item' 
               id={i.id} 
@@ -168,13 +167,13 @@ class SocialViewPanel extends Component {
   render() {
     return (
       <div id='social-media-panel'>
-        { this.state.data.map(i => {
+        { this.state.data.map((i, index) => {
           return (
-            <div className='social-media-links'>
+            <div className='social-media-links' key={index}>
               <span className='social-media-item'>{i.name}</span>
-              <a className='fa fa-github social-media-item' href={i.github} aria-hidden='true'></a>
-              <a className='fa fa-instagram social-media-item' href={i.instagram} aria-hidden='true'></a>
-              <a className='fa fa-twitter social-media-item' href={i.twitter} aria-hidden='true'></a>          
+              <a className='fa fa-github social-media-item' href={i.github} />
+              <a className='fa fa-instagram social-media-item' href={i.instagram} />
+              <a className='fa fa-twitter social-media-item' href={i.twitter} /> 
             </div>
           )
         }) }
@@ -187,17 +186,26 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      page: 'home'
+      route: window.location.hash.substr(1)
     };
   }
 
-  handleMenuItemClick (itemId) {
-    this.setState({page: itemId});
+  componentDidMount() {
+    window.addEventListener('hashchange', () => {
+      this.setState({
+        route: window.location.hash.substr(1)
+      })
+    })
+  }
+
+  handleMenuItemClick (itemId) {    
+    window.location.hash = itemId;
+    this.setState({route: itemId});
   }
 
   render() {
     let View = null;
-      switch (this.state.page) {
+      switch (this.state.route) {
         case 'home': View = <ProjectsView />; break;
         case 'contact': View = <Contact />; break;
         case 'about': View = <About />; break;

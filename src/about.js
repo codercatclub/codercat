@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 import './style.css';
 
-
 class About extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div className='view' id='about-view'>
