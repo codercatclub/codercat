@@ -163,11 +163,26 @@ a {
 }
 
 @media (max-width: 600px) {
-  #projects-view {
-    width: var(--proj-box-size);
-    height: auto;
+  :root {
+    --views-width: 400px;
+    --proj-box-size: 400px;
   }
+  #menu {
+    margin-top: auto;
+    margin-right: 20px;
+  }
+
   #scroll-down-btn-container {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --views-width: 100vw;
+    --proj-box-size: 100vw;
+  }
+  #menu-list {
+    padding-left: 10px;
   }
 }
