@@ -123,6 +123,11 @@ class ProjectsView extends Component {
         "description": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
         "img": "img/photospheres.png ",
         "link": "photospheres.html"
+      }, {
+        "name": "3D TSP HEART",
+        "description": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+        "img": "img/tsp-3d-art.png ",
+        "link": "tsp-3d-art"
       }]
     }
   }

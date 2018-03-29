@@ -12,6 +12,7 @@ app.use(express.static('build/html'));
 app.use(express.static(path.join(__dirname, 'repos', 'gender-graph', 'public')));
 app.use(express.static(path.join(__dirname, 'repos', 'vertex-texture-cache', 'public')));
 app.use(express.static(path.join(__dirname, 'repos', '360-photo-to-video', 'public')));
+app.use(express.static(path.join(__dirname, 'repos', 'tsp-3D-art', 'public')));
 
 // Routes for nested repositories
 app.get('/vertex-cache', (req, res) => {
@@ -26,6 +27,9 @@ app.get('/gendergraph', (req, res) => {
   res.sendFile(path.join(__dirname, 'repos', 'gender-graph', 'public', 'html', 'index.html'));
 })
 
+app.get('/tsp-3d-art', (req, res) => {
+  res.sendFile(path.join(__dirname, 'repos', 'tsp-3D-art', 'public', 'html', 'final.html'));
+})
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
