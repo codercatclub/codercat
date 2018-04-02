@@ -128,6 +128,11 @@ class ProjectsView extends Component {
         "description": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
         "img": "img/tsp-3d-art.png ",
         "link": "tsp-3d-art"
+      }, {
+	"name": "THREEJS CURVATURE",
+	"description": "we're famous now i<3 mr.doob",
+	"img": "img/curvatureExample.jpg",
+	"link": "https://threejs.org/examples/#webgl_materials_curvature"
       }]
     }
   }
