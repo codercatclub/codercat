@@ -85,6 +85,12 @@ class ProjectsView extends Component {
     this.state = {
       projects: [
         {
+          "name": "AURACARIA DREAMS",
+          "description": "",
+          "img": "img/auracaria-dreams.png",
+          "link": "auracaria-dreams"
+        },
+        {
           "name": "STREET SOUNDS",
           "description": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.",
           "img": "img/street-sonds.jpg",
@@ -192,9 +198,15 @@ class SocialViewPanel extends Component {
           return (
             <div className='social-media-links' key={index}>
               <span className='social-media-item'>{i.name}</span>
-              <a className='fa fa-github social-media-item' href={i.github} />
-              <a className='fa fa-instagram social-media-item' href={i.instagram} />
-              <a className='fa fa-twitter social-media-item' href={i.twitter} /> 
+              <a href={i.github}>
+                <i className='fa fa-github social-media-item' />
+              </a>
+              <a href={i.instagram}>
+                <i className='fa fa-instagram social-media-item' />
+              </a>
+              <a href={i.twitter}>
+                <i className='fa fa-twitter social-media-item'></i>
+              </a>
             </div>
           )
         }) }

@@ -10,3 +10,6 @@
 [submodule "repos/tsp-3D-art"]
 	path = repos/tsp-3D-art
 	url = https://github.com/sneha-belkhale/tsp-3D-art
+[submodule "repos/auracaria-dreams"]
+	path = repos/auracaria-dreams
+	url = https://github.com/sneha-belkhale/procedural-plants-threejs
