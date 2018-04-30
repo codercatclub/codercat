@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import './style.css';
 
@@ -12,9 +12,9 @@ class Menu extends Component {
     this.state = {
       title: '',
       items: [
-        {id: 'about', name: 'About'},
-        {id: 'contact', name: 'Contact'},
-        {id: 'home', name: 'Codercat'}
+        { id: 'about', name: 'About' },
+        { id: 'contact', name: 'Contact' },
+        { id: 'home', name: 'Codercat' }
       ],
       selectedItemId: 'home'
     }
@@ -28,20 +28,20 @@ class Menu extends Component {
     })
   }
   render() {
-    
-    
+
+
     return (
       <div id='menu'>
         <h1 id='menu-title'>{this.state.title}</h1>
         <ul id='menu-list'>
-          { this.state.items.map((i, index) => {
+          {this.state.items.map((i, index) => {
             return <li
-              className='menu-list-item' 
-              id={i.id} 
+              className='menu-list-item'
+              id={i.id}
               key={index}
-              style={this.state.selectedItemId === i.id ? {textDecoration: 'underline'} : {textDecoration: 'none'}}
+              style={this.state.selectedItemId === i.id ? { textDecoration: 'underline' } : { textDecoration: 'none' }}
               onClick={this.handleMenuItemClick.bind(this)}> {i.name} </li>
-          }, this) }
+          }, this)}
         </ul>
       </div>
     )
@@ -53,8 +53,8 @@ class Contact extends Component {
     super(props);
     this.state = {
       contacts: [
-        {name: 'Sneha', email: 'sbelkhale@gmail.com '},
-        {name: 'Kirill', email: 'kovalewskiy@gmail.com'}
+        { name: 'Sneha', email: 'sbelkhale@gmail.com ' },
+        { name: 'Kirill', email: 'kovalewskiy@gmail.com' }
       ],
       copiedValue: 'blaa',
       copied: false
@@ -64,7 +64,7 @@ class Contact extends Component {
     return (
       <div id='contact'>
         <h1>Contact</h1>
-        { this.state.contacts.map(i => {
+        {this.state.contacts.map(i => {
           return <div>
             <h2>{i.name}</h2>
             <p className='contact-entry'> Email: {i.email}</p>
@@ -72,8 +72,8 @@ class Contact extends Component {
               <button>copy</button>
             </CopyToClipboard>
           </div>
-        }) }
-        
+        })}
+
       </div>
     )
   }
@@ -157,14 +157,14 @@ class ProjectsView extends Component {
     return (
       <div className='view' id='projects-view'>
         <div className='main-container' id='project-container'>
-          { this.state.projects.map((i, index) => {
+          {this.state.projects.map((i, index) => {
             return (
               <a id='project-box' href={i.link} key={index}>
                 <img src={i.img} alt={i.name} />
                 <h1 id='box-title'>{i.name}</h1>
               </a>
             );
-          }) }
+          })}
         </div>
       </div>
     )
@@ -177,14 +177,14 @@ class SocialViewPanel extends Component {
     this.state = {
       data: [
         {
-          name: 'kirill', 
-          github: 'https://github.com/kif11', 
-          instagram: 'https://instagram.com/kif11', 
+          name: 'kirill',
+          github: 'https://github.com/kif11',
+          instagram: 'https://instagram.com/kif11',
           twitter: 'https://twitter.com/kovalewskiy'
         },
         {
-          name: 'sneha', 
-          github: 'https://github.com/sneha-belkhale', 
+          name: 'sneha',
+          github: 'https://github.com/sneha-belkhale',
           instagram: 'https://www.instagram.com/snayss/',
           twitter: 'https://twitter.com/snayyss'
         }
@@ -194,7 +194,7 @@ class SocialViewPanel extends Component {
   render() {
     return (
       <div id='social-media-panel'>
-        { this.state.data.map((i, index) => {
+        {this.state.data.map((i, index) => {
           return (
             <div className='social-media-links' key={index}>
               <span className='social-media-item'>{i.name}</span>
@@ -209,7 +209,7 @@ class SocialViewPanel extends Component {
               </a>
             </div>
           )
-        }) }
+        })}
       </div>
     )
   }
@@ -231,23 +231,23 @@ class App extends Component {
     })
   }
 
-  handleMenuItemClick (itemId) {    
+  handleMenuItemClick(itemId) {
     window.location.hash = itemId;
-    this.setState({route: itemId});
+    this.setState({ route: itemId });
   }
 
   render() {
     let View = null;
-      switch (this.state.route) {
-        case 'home': View = <ProjectsView />; break;
-        case 'contact': View = <Contact />; break;
-        case 'about': View = <About />; break;
-        default: View = <ProjectsView />;
-      }
+    switch (this.state.route) {
+      case 'home': View = <ProjectsView />; break;
+      case 'contact': View = <Contact />; break;
+      case 'about': View = <About />; break;
+      default: View = <ProjectsView />;
+    }
     return (
       <div id='app-view'>
         <div id='center-container'>
-          <Menu onMenuItemClick={this.handleMenuItemClick.bind(this)}/>
+          <Menu onMenuItemClick={this.handleMenuItemClick.bind(this)} />
           {View}
           <SocialViewPanel />
         </div>
