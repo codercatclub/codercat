@@ -6,8 +6,7 @@ This is cats collaborative that want to make world a better place by embracing t
 ```
 git clone https://github.com/Kif11/codercat
 cd codercat/
-npm install
-node main.js
+yarn dev
 ```
 
 Creators [Kirill](https://github.com/kif11) and [Snay](https://github.com/sneha-belkhale)
