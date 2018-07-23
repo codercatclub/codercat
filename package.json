@@ -4,20 +4,30 @@
   "homepage": "https://codercat.club",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.2",
+    "prop-types": "^15.6.2",
     "react": "16.1.1",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "16.1.1",
-    "react-scripts": "1.0.10"
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.0.10",
+    "styled-components": "^3.3.3"
   },
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dev": "concurrently --kill-others-on-fail 'react-scripts start' 'nodemon server.js'"
+    "dev": "concurrently --kill-others-on-fail 'react-scripts start' 'nodemon server.js'",
+    "lint:fix": "eslint --ignore-path .gitignore ./src --fix"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
     "nodemon": "^1.17.3"
   },
   "proxy": {
