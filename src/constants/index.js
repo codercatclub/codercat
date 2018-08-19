@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'AR GPU PARTICLES',
+    img: 'img/ar-gpu-particles.jpg',
+    link: 'ar-gpu-particles',
+  },
+  {
     name: 'AURACARIA DREAMS',
     img: 'img/auracaria-dreams.png',
     link: 'auracaria-dreams',
@@ -53,11 +58,6 @@ export const projects = [
     name: 'SUBCITY',
     img: 'img/subcity.jpg',
     link: 'http://subcity.tk',
-  },
-  {
-    name: 'GALLERY',
-    img: 'img/subcity.jpg',
-    link: 'gallery.html',
   },
 ];
 

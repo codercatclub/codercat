@@ -13,3 +13,6 @@
 [submodule "repos/auracaria-dreams"]
 	path = repos/auracaria-dreams
 	url = https://github.com/sneha-belkhale/procedural-plants-threejs
+[submodule "repos/AR-GPU-Particles"]
+	path = repos/AR-GPU-Particles
+	url = https://github.com/sneha-belkhale/AR-GPU-Particles
