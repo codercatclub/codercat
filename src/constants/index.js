@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'NEUROJAM',
+    img: 'img/neurojam.png',
+    link: 'neurojam.html',
+  },
+  {
     name: 'AR GPU PARTICLES',
     img: 'img/ar-gpu-particles.jpg',
     link: 'ar-gpu-particles',

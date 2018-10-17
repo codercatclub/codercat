@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dev": "concurrently --kill-others-on-fail 'react-scripts start' 'nodemon server.js'",
+    "dev": "concurrently --kill-others-on-fail 'react-scripts start' 'export DEV=1; nodemon server.js'",
     "lint:fix": "eslint --ignore-path .gitignore ./src --fix"
   },
   "devDependencies": {

@@ -44,8 +44,13 @@ const subApps = [
   },
 ];
 
-codercat.use(express.static('build'));
-codercat.use(express.static('build/html'));
+if (process.env.DEV) {
+  codercat.use(express.static('public'));
+  codercat.use(express.static('public/html'));
+} else {
+  codercat.use(express.static('build'));
+  codercat.use(express.static('build/html'));
+}
 
 // Frontend routes for react router
 codercat.get('/gallery', (req, res) => {
