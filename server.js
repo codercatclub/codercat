@@ -7,6 +7,12 @@ const port = 8081;
 
 const subApps = [
   {
+    name: 'growYourBot',
+    entry: 'repos/grow-your-own-bot/build/index.html',
+    public: ['repos/grow-your-own-bot/build'],
+    route: '/grow-your-own-bot',
+  },
+  {
     name: 'vertexCache',
     entry: 'repos/vertex-texture-cache/public/html/index.html',
     public: ['repos/vertex-texture-cache/public'],

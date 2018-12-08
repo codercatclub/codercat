@@ -16,3 +16,6 @@
 [submodule "repos/AR-GPU-Particles"]
 	path = repos/AR-GPU-Particles
 	url = https://github.com/sneha-belkhale/AR-GPU-Particles
+[submodule "repos/grow-your-own-bot"]
+	path = repos/grow-your-own-bot
+	url = https://github.com/sneha-belkhale/grow-your-own-bot

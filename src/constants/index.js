@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'GROW YOUR OWN BOT',
+    img: 'img/creatures.png',
+    link: 'grow-your-own-bot',
+  },
+  {
     name: 'NEUROJAM',
     img: 'img/neurojam.png',
     link: 'neurojam.html',
