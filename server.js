@@ -48,6 +48,12 @@ const subApps = [
     public: ['repos/AR-GPU-Particles/build'],
     route: '/ar-gpu-particles',
   },
+  {
+    name: 'galacticGypsy',
+    entry: 'repos/galactic-gypsy/build/index.html',
+    public: ['repos/galactic-gypsy/build'],
+    route: '/galactic-gypsy',
+  },
 ];
 
 if (process.env.DEV) {

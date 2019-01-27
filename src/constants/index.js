@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'GALACTIC GYPSY',
+    img: 'img/galactic-gypsy.jpg',
+    link: 'galactic-gypsy',
+  },
+  {
     name: 'GROW YOUR OWN BOT',
     img: 'img/creatures.png',
     link: 'grow-your-own-bot',

@@ -19,3 +19,6 @@
 [submodule "repos/grow-your-own-bot"]
 	path = repos/grow-your-own-bot
 	url = https://github.com/sneha-belkhale/grow-your-own-bot
+[submodule "repos/galactic-gypsy"]
+	path = repos/galactic-gypsy
+	url = https://github.com/sneha-belkhale/galactic-gypsy
