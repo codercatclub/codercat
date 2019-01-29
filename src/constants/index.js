@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'RELAXATION ROOM',
+    img: 'img/relaxation-room.jpg',
+    link: 'relaxation-room',
+  },
+  {
     name: 'GALACTIC GYPSY',
     img: 'img/galactic-gypsy.jpg',
     link: 'galactic-gypsy',

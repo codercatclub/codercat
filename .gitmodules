@@ -22,3 +22,6 @@
 [submodule "repos/galactic-gypsy"]
 	path = repos/galactic-gypsy
 	url = https://github.com/sneha-belkhale/galactic-gypsy
+[submodule "repos/relaxation-room"]
+	path = repos/relaxation-room
+	url = https://github.com/sneha-belkhale/relaxation-room

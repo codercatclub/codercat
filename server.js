@@ -7,6 +7,12 @@ const port = 8081;
 
 const subApps = [
   {
+    name: 'relaxationRoom',
+    entry: 'repos/relaxation-room/build/index.html',
+    public: ['repos/relaxation-room/build'],
+    route: '/relaxation-room',
+  },
+  {
     name: 'growYourBot',
     entry: 'repos/grow-your-own-bot/build/index.html',
     public: ['repos/grow-your-own-bot/build'],
