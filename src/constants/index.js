@@ -1,5 +1,15 @@
 export const projects = [
   {
+    name: 'SKINNED MESH IK',
+    img: 'img/ik.png',
+    link: 'https://jsantell.github.io/THREE.IK/examples/#skinned-mesh',
+  },
+  {
+    name: 'BOX PROJECTED ENVIRONMENT MAPPING',
+    img: 'img/bpcem.png',
+    link: 'https://threejs.org/examples/?q=envm#webgl_materials_envmaps_parallax',
+  },
+  {
     name: 'RELAXATION ROOM',
     img: 'img/relaxation-room.jpg',
     link: 'relaxation-room',
