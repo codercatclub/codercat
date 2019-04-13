@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'AI ANIMATION',
+    img: 'img/ai-animation.jpg',
+    link: 'ai-animation',
+  },
+  {
     name: 'SKINNED MESH IK',
     img: 'img/ik.png',
     link: 'https://jsantell.github.io/THREE.IK/examples/#skinned-mesh',
@@ -8,10 +13,6 @@ export const projects = [
     name: 'BOX PROJECTED ENVIRONMENT MAPPING',
     img: 'img/bpcem.png',
     link: 'https://threejs.org/examples/?q=envm#webgl_materials_envmaps_parallax',
-  {
-    name: 'AI ANIMATION', 
-    img: 'img/ai-animation.jpg',
-    link: 'ai-animation',
   },
   {
     name: 'RELAXATION ROOM',
