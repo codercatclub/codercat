@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'AI ANIMATION',
+    img: 'img/ai-animation.jpg',
+    link: 'ai-animation',
+  },
+  {
     name: 'RELAXATION ROOM',
     img: 'img/relaxation-room.jpg',
     link: 'relaxation-room',

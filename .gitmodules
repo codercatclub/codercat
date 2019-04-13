@@ -25,3 +25,6 @@
 [submodule "repos/relaxation-room"]
 	path = repos/relaxation-room
 	url = https://github.com/sneha-belkhale/relaxation-room
+[submodule "repos/ai-animation"]
+	path = repos/ai-animation
+	url = https://github.com/sneha-belkhale/AI4Animation-js
