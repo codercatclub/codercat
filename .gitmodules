@@ -28,3 +28,6 @@
 [submodule "repos/ai-animation"]
 	path = repos/ai-animation
 	url = https://github.com/sneha-belkhale/AI4Animation-js
+[submodule "repos/monster-or-friend"]
+	path = repos/monster-or-friend
+	url = https://github.com/Kif11/monster-or-friend

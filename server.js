@@ -7,6 +7,12 @@ const port = 8081;
 
 const subApps = [
   {
+    name: 'monsterOrFriend',
+    entry: 'repos/monster-or-friend/dist/index.html',
+    public: ['repos/monster-or-friend/dist'],
+    route: '/monster-or-friend',
+  },
+  {
     name: 'aiAnimation',
     entry: 'repos/ai-animation/build/index.html',
     public: ['repos/ai-animation/build'],
