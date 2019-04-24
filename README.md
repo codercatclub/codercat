@@ -13,7 +13,13 @@ yarn dev
 
 Fist add your project to `server.js`
 If you want it to show up on the main page also edit `projects` in `constants/index.js`
-You will need to prepare 600x600 pixel project thumbnail and place it under `public/img`
+You will need to prepare project thumbnail and place it under `public/img`
+
+Thumbnail requirements:
+
+- Image size 600x600 pixel
+- JPEG format
+- JPEG quality is 0.8 or 80%
 
 ```
 # Create new submodule

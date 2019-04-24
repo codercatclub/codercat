@@ -10,14 +10,9 @@ export const projects = [
     link: 'ai-animation',
   },
   {
-    name: 'SKINNED MESH IK',
-    img: 'img/ik.png',
-    link: 'https://jsantell.github.io/THREE.IK/examples/#skinned-mesh',
-  },
-  {
-    name: 'BOX PROJECTED ENVIRONMENT MAPPING',
-    img: 'img/bpcem.png',
-    link: 'https://threejs.org/examples/?q=envm#webgl_materials_envmaps_parallax',
+    name: 'GENDERGRAPH',
+    img: 'img/gendergraph.jpg',
+    link: 'gendergraph',
   },
   {
     name: 'RELAXATION ROOM',
@@ -25,18 +20,28 @@ export const projects = [
     link: 'relaxation-room',
   },
   {
+    name: 'BOX PROJECTED ENVIRONMENT MAPPING',
+    img: 'img/bpcem.jpg',
+    link: 'https://threejs.org/examples/?q=envm#webgl_materials_envmaps_parallax',
+  },
+  {
     name: 'GALACTIC GYPSY',
     img: 'img/galactic-gypsy.jpg',
     link: 'galactic-gypsy',
   },
   {
+    name: 'SKINNED MESH IK',
+    img: 'img/skinned-mesh-ik.jpg',
+    link: 'https://jsantell.github.io/THREE.IK/examples/#skinned-mesh',
+  },
+  {
     name: 'GROW YOUR OWN BOT',
-    img: 'img/creatures.png',
+    img: 'img/creatures.jpg',
     link: 'grow-your-own-bot',
   },
   {
     name: 'NEUROJAM',
-    img: 'img/neurojam.png',
+    img: 'img/neurojam.jpg',
     link: 'neurojam.html',
   },
   {
@@ -46,14 +51,14 @@ export const projects = [
   },
   {
     name: 'AURACARIA DREAMS',
-    img: 'img/auracaria-dreams.png',
+    img: 'img/auracaria-dreams.jpg',
     link: 'auracaria-dreams',
   },
-  {
-    name: 'STREET SOUNDS',
-    img: 'img/street-sonds.jpg',
-    link: 'https://streetsounds.tk',
-  },
+  // {
+  //   name: 'STREET SOUNDS',
+  //   img: 'img/street-sonds.jpg',
+  //   link: 'https://streetsounds.tk',
+  // },
   {
     name: 'THREEJS CURVATURE',
     img: 'img/curvatureExample.jpg',
@@ -80,11 +85,6 @@ export const projects = [
     link: 'whirlpools.html',
   },
   {
-    name: 'GENDERGRAPH',
-    img: 'img/gendergraph.jpg',
-    link: 'gendergraph',
-  },
-  {
     name: 'PHOTOSPHERES',
     img: 'img/photospheres.jpg ',
     link: 'photospheres.html',
@@ -94,11 +94,11 @@ export const projects = [
     img: 'img/terminal-prints.jpg',
     link: 'terminal-prints.html',
   },
-  {
-    name: 'SUBCITY',
-    img: 'img/subcity.jpg',
-    link: 'http://subcity.tk',
-  },
+  // {
+  //   name: 'SUBCITY',
+  //   img: 'img/subcity.jpg',
+  //   link: 'http://subcity.tk',
+  // },
 ];
 
 export const socialIconsUsers = [
