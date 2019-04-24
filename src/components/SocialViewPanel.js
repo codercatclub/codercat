@@ -6,7 +6,7 @@ export default function SocialViewPanel() {
   return (
     <div id="social-media-panel">
       {socialIconsUsers.map(user => (
-        <div className="social-media-links" key={user.name}>
+        <div className="social-media-link" key={user.name}>
           <span className="social-media-item">
             {user.name}
           </span>
