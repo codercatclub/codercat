@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Altspace Event</title>
+  <style>
+    html, body {
+      margin: 0;
+    }
+    .videoContainer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    iframe {
+      /* optional */
+      width: 100%;
+      height: 100%;
+      pointer-events: none; 
+    }
+    .blocker {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="blocker"></div>
+  <iframe
+    id="video"
+    class="videoContainer"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  >
+  </iframe>
+  <script>
+    const blocker = document.querySelector('.blocker');
+    const video = document.querySelector('#video');
+    const videoUrl = "https://www.youtube.com/embed/ftcScnH19q8";
+    const url = `${videoUrl}?controls=0&rel=0&hl=en&autoplay=1&modestbranding=1`;
+
+    video.setAttribute('src', url);
+
+    blocker.addEventListener('click', event => {
+      video.setAttribute('src', url);
+      event.preventDefault();
+    })
+  </script>
+</body>
+</html>
