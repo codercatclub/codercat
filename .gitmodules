@@ -31,3 +31,6 @@
 [submodule "repos/monster-or-friend"]
 	path = repos/monster-or-friend
 	url = https://github.com/Kif11/monster-or-friend
+[submodule "repos/procedural-ik-crawler"]
+	path = repos/procedural-ik-crawler
+	url = https://github.com/sneha-belkhale/procedural-ik-crawler

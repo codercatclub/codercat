@@ -72,6 +72,12 @@ const subApps = [
     public: ['repos/galactic-gypsy/build'],
     route: '/galactic-gypsy',
   },
+  {
+    name: 'proceduralIKCrawler',
+    entry: 'repos/procedural-ik-crawler/build/index.html',
+    public: ['repos/procedural-ik-crawler/build'],
+    route: '/procedural-ik-crawler',
+  },
 ];
 
 if (process.env.DEV) {

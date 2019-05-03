@@ -15,6 +15,11 @@ export const projects = [
     link: 'gendergraph',
   },
   {
+    name: 'PROCEDURAL IK CRAWLER',
+    img: 'img/procedural-ik.png',
+    link: 'procedural-ik-crawler',
+  },
+  {
     name: 'RELAXATION ROOM',
     img: 'img/relaxation-room.jpg',
     link: 'relaxation-room',
