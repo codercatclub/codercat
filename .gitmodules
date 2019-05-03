@@ -31,3 +31,6 @@
 [submodule "repos/monster-or-friend"]
 	path = repos/monster-or-friend
 	url = https://github.com/Kif11/monster-or-friend
+[submodule "repos/three-body"]
+	path = repos/three-body
+	url = https://github.com/Kif11/three-body.git

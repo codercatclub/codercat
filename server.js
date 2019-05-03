@@ -7,6 +7,12 @@ const port = 8081;
 
 const subApps = [
   {
+    name: 'threeBody',
+    entry: 'repos/three-body/dist/index.html',
+    public: ['repos/three-body/dist'],
+    route: '/three-body',
+  },
+  {
     name: 'monsterOrFriend',
     entry: 'repos/monster-or-friend/dist/index.html',
     public: ['repos/monster-or-friend/dist'],
