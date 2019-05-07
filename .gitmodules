@@ -37,3 +37,7 @@
 [submodule "repos/three-body"]
 	path = repos/three-body
 	url = https://github.com/Kif11/three-body.git
+[submodule "repos/vertex-cache-aframe"]
+	path = repos/vertex-cache-aframe
+	url = https://github.com/Kif11/three-body/
+	branch = vertex-cache-demo

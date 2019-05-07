@@ -7,6 +7,12 @@ const port = 8081;
 
 const subApps = [
   {
+    name: 'vertexCacheAframe',
+    entry: 'repos/vertex-cache-aframe/dist/index.html',
+    public: ['repos/vertex-cache-aframe/dist'],
+    route: '/vertex-cache-aframe',
+  },
+  {
     name: 'threeBody',
     entry: 'repos/three-body/dist/index.html',
     public: ['repos/three-body/dist'],
