@@ -15,6 +15,11 @@ export const projects = [
     link: 'gendergraph',
   },
   {
+    name: 'PROCEDURAL IK CRAWLER',
+    img: 'img/procedural-ik.png',
+    link: 'procedural-ik-crawler',
+  },
+  {
     name: 'ANTICAP',
     img: 'img/anticap.jpg',
     link: 'https://github.com/Kif11/anticap',

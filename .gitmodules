@@ -31,6 +31,13 @@
 [submodule "repos/monster-or-friend"]
 	path = repos/monster-or-friend
 	url = https://github.com/Kif11/monster-or-friend
+[submodule "repos/procedural-ik-crawler"]
+	path = repos/procedural-ik-crawler
+	url = https://github.com/sneha-belkhale/procedural-ik-crawler
 [submodule "repos/three-body"]
 	path = repos/three-body
 	url = https://github.com/Kif11/three-body.git
+[submodule "repos/vertex-cache-aframe"]
+	path = repos/vertex-cache-aframe
+	url = https://github.com/Kif11/three-body/
+	branch = vertex-cache-demo

@@ -7,6 +7,12 @@ const port = 8081;
 
 const subApps = [
   {
+    name: 'vertexCacheAframe',
+    entry: 'repos/vertex-cache-aframe/dist/index.html',
+    public: ['repos/vertex-cache-aframe/dist'],
+    route: '/vertex-cache-aframe',
+  },
+  {
     name: 'threeBody',
     entry: 'repos/three-body/dist/index.html',
     public: ['repos/three-body/dist'],
@@ -77,6 +83,12 @@ const subApps = [
     entry: 'repos/galactic-gypsy/build/index.html',
     public: ['repos/galactic-gypsy/build'],
     route: '/galactic-gypsy',
+  },
+  {
+    name: 'proceduralIKCrawler',
+    entry: 'repos/procedural-ik-crawler/build/index.html',
+    public: ['repos/procedural-ik-crawler/build'],
+    route: '/procedural-ik-crawler',
   },
 ];
 
