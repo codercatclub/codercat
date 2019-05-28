@@ -15,6 +15,11 @@ export const projects = [
     link: 'gendergraph',
   },
   {
+    name: 'ANTICAP',
+    img: 'img/anticap.jpg',
+    link: 'https://github.com/Kif11/anticap',
+  },
+  {
     name: 'RELAXATION ROOM',
     img: 'img/relaxation-room.jpg',
     link: 'relaxation-room',
