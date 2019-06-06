@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'THREE BODY',
+    img: 'img/three-body.jpg',
+    link: 'three-body',
+  },
+  {
     name: 'MONSTER OR FRIEND',
     img: 'img/monster-or-friend.jpg',
     link: 'monster-or-friend',
