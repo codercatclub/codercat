@@ -30,6 +30,11 @@ export const projects = [
     link: 'https://github.com/Kif11/anticap',
   },
   {
+    name: 'STREET SOUNDS',
+    img: 'img/street-sonds.jpg',
+    link: 'street-sounds',
+  },
+  {
     name: 'RELAXATION ROOM',
     img: 'img/relaxation-room.jpg',
     link: 'relaxation-room',
@@ -69,11 +74,6 @@ export const projects = [
     img: 'img/auracaria-dreams.jpg',
     link: 'auracaria-dreams',
   },
-  // {
-  //   name: 'STREET SOUNDS',
-  //   img: 'img/street-sonds.jpg',
-  //   link: 'https://streetsounds.tk',
-  // },
   {
     name: 'THREEJS CURVATURE',
     img: 'img/curvatureExample.jpg',
