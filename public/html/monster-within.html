@@ -40,7 +40,7 @@
     .background {
       background: url(img/monster-within/background.jpg) repeat-x;
       background-position-y: var(--bg-offset-x);
-      height: calc(var(--bg-offset-x) + 1450px);
+      height: calc(var(--bg-offset-x) + 1650px);
       background-position-x: center;
     }
     .background2 {
@@ -89,7 +89,7 @@
       margin-top: 30px;
     }
     .button {
-      margin-bottom: 2vw;
+      margin-bottom: 1vw;
       height: fit-content;
       width: fit-content;
     }
@@ -149,6 +149,12 @@
       margin-bottom: 4vw;
       text-align: justify;
     }
+    .video {
+      width: 100%;
+    }
+    .video-container {
+      margin-top: 30px;
+    }
     @media screen and (max-width: 600px) {
       h1 {
         font-size: 17vw;
@@ -177,7 +183,7 @@
         <div class="title">
           <h1>MONSTER</h1>
           <h1>WITHIN</h1>
-        </div> 
+        </div>
         <div class="center-column">
           <p class="description">
             Monster Within is a short interactive Virtual Reality experience about the unpredictable nature of social acceptance.
@@ -187,10 +193,13 @@
             were.
           </p>
           <div class="buttons-container">
-            <a class="button" href="https://codercat.tk" target="_blank">
-              <img class="button-img" src="img/monster-within/oculus-button@2x.png" />
+            <a class="button" href="https://xpan.cc/a-193" target="_blank">
+              <img class="button-img" src="img/monster-within/sidequest-button@2x.png" />
             </a>
-            <a class="button" href="https://github.com/Kif11/monster-within/releases/download/v0.3/MonsterWithin_v0.3.apk" target="_blank">
+            <!-- <a class="button" href="https://codercat.tk" target="_blank">
+              <img class="button-img" src="img/monster-within/oculus-button@2x.png" />
+            </a> -->
+            <a class="button" href="https://github.com/Kif11/monster-within/releases/download/v0.5/MonsterWithin_v0.5.apk" target="_blank">
               <img class="button-img" src="img/monster-within/android-button@2x.png" />
             </a>
           </div>
@@ -200,8 +209,9 @@
     <div class="background2">
       <div class="centered">
         <div class="center-column">
-          <h2>Screenshots</h2>
-          <p>Pictures taken during Unity gameplay</p>
+          <div class="video-container">
+            <iframe class="video" width="560" height="400" src="https://www.youtube.com/embed/wqibm17HmYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
           <div class="gallery-grid">
             <img class="screenshot" src="img/monster-within/shot_01.png" />
             <img class="screenshot" src="img/monster-within/shot_02.png" />
