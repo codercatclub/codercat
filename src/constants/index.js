@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'ALCHEMY PAINTER',
+    img: 'img/alchemy-painter.jpg',
+    link: 'https://sidequestvr.com/#/app/226',
+  },
+  {
     name: 'MONSTER WITHIN',
     img: 'img/monster-within.jpg',
     link: 'monster-within.html',
