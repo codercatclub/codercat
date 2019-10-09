@@ -93,6 +93,7 @@ a {
 
 #about-container p {
   text-align: justify;
+  line-height: 25px;
 }
 
 #project-box {

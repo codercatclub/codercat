@@ -10,10 +10,10 @@ export default function About() {
           About
         </h1>
         <p>
-          We are a duo of 3D Graphic enthusiasts, building experiences that advance the state of graphics on the web.
-          Our areas of interest include WebVR, Procedural Animations, and using technology to bring new persepectives on social issues.
+          We are a group of Computer Graphic enthusiasts, building experiences in cutting edge fields ranging from Virtual and Augmented Reality to WebVR and procedural animations and generation.
+          Our goal is to bring new perspectives on social issues by using technology and art.
           <br /><br />
-          Contact us for collaborations~
+          Contact us for any collaborations.
         </p>
       </div>
     </div>

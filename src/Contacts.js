@@ -10,7 +10,7 @@ export default function Contacts() {
       {contacts.map(i => (
         <div>
           <h2>{i.name}</h2>
-          <p className="contact-entry">{' Email:'}{i.email}</p>
+          <p className="contact-entry">{' Email: '}{i.email}</p>
           <CopyToClipboard className="contact-entry" text={i.email}>
             <button type="button">copy</button>
           </CopyToClipboard>
