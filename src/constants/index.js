@@ -30,6 +30,11 @@ export const projects = [
     link: 'gendergraph',
   },
   {
+    name: 'STARLING SIMULATION',
+    img: 'img/starling.jpg',
+    link: 'https://starlingstorage.io/',
+  },
+  {
     name: 'PROCEDURAL IK CRAWLER',
     img: 'img/procedural-ik.png',
     link: 'procedural-ik-crawler',
