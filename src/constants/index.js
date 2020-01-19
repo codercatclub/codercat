@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'WIFI SOUNDSCAPES',
+    img: 'img/wifi-soundscapes.jpg',
+    link: 'wifi-soundscapes/index.html',
+  },
+  {
     name: 'ALCHEMY PAINTER',
     img: 'img/alchemy-painter.jpg',
     link: 'https://sidequestvr.com/#/app/226',
