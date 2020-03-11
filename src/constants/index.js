@@ -82,7 +82,7 @@ export const projects = [
   {
     name: 'NEUROJAM',
     img: 'img/neurojam.jpg',
-    link: 'neurojam.html',
+    link: 'neurojam',
   },
   {
     name: 'AR GPU PARTICLES',

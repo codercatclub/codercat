@@ -41,3 +41,6 @@
 	path = repos/vertex-cache-aframe
 	url = https://github.com/Kif11/three-body/
 	branch = vertex-cache-demo
+[submodule "repos/neurojam-ui"]
+	path = repos/neurojam-ui
+	url = https://github.com/Kif11/neurojam-ui

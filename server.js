@@ -90,6 +90,12 @@ const subApps = [
     public: ['repos/procedural-ik-crawler/build'],
     route: '/procedural-ik-crawler',
   },
+  {
+    name: 'neurojam',
+    entry: 'repos/neurojam-ui/out/index.html',
+    public: ['repos/neurojam-ui/out'],
+    route: '/neurojam',
+  },
 ];
 
 if (process.env.DEV) {
