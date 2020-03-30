@@ -96,6 +96,12 @@ const subApps = [
     public: ['repos/neurojam-ui/out'],
     route: '/neurojam',
   },
+  {
+    name: 'test',
+    entry: 'repos/monster-or-friend/dist/index.html',
+    public: ['repos/monster-or-friend-test/dist'],
+    route: '/test',
+  },
 ];
 
 if (process.env.DEV) {
