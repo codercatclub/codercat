@@ -44,3 +44,6 @@
 [submodule "repos/neurojam-ui"]
 	path = repos/neurojam-ui
 	url = https://github.com/Kif11/neurojam-ui
+[submodule "repos/flux"]
+	path = repos/flux
+	url = https://github.com/codercatclub/flux

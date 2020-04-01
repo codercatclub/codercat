@@ -102,6 +102,12 @@ const subApps = [
     public: ['repos/monster-or-friend-test/dist'],
     route: '/test',
   },
+  {
+    name: 'flux',
+    entry: 'repos/flux/out/index.html',
+    public: ['repos/flux/out'],
+    route: '/flux',
+  },
 ];
 
 if (process.env.DEV) {
