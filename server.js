@@ -133,7 +133,9 @@ subApps.forEach((app) => {
   const expressApp = express();
 
   for (let i = 0; i < app.public.length; i += 1) {
-    expressApp.use(express.static(app.public[i]));
+    expressApp.use(
+      express.static(app.public[i], { extensions: ['html'] }),
+    );
   }
 
   expressApp.get('/', (req, res) => {
