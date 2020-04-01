@@ -25,8 +25,11 @@ Thumbnail requirements:
 # Create new submodule
 git submodule add {github_repo} {local_path}
 
-# Pull it and others
+# For updating all submodules to latest
 git submodule foreach git pull origin master
+
+# For initializing submodules
+git submodule update --init
 
 # Navigate to the repo install dependencies and build
 cd repos/{repo_name}
