@@ -3,15 +3,15 @@
   "description": "Place fort cats who code",
   "homepage": "https://codercat.club",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.2",
-    "prop-types": "^15.6.2",
-    "react": "16.1.1",
-    "react-copy-to-clipboard": "^5.0.1",
-    "react-dom": "16.1.2",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.0.10",
-    "styled-components": "^3.3.3"
+    "@fortawesome/fontawesome": "^1.1.8",
+    "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.0"
   },
   "version": "0.1.0",
   "private": true,
@@ -22,17 +22,24 @@
     "lint:fix": "eslint --ignore-path .gitignore ./src --fix"
   },
   "devDependencies": {
-    "concurrently": "^3.5.1",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.10.0",
-    "nodemon": "^1.17.3"
+    "concurrently": "^5.2.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "nodemon": "^2.0.3"
   },
-  "proxy": {
-    "/": {
-      "target": "http://localhost:8081/"
-    }
+  "proxy": "http://localhost:8081/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
