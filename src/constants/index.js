@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'FLUX',
+    img: 'img/flux.jpg',
+    link: 'flux',
+  },
+  {
     name: 'MA',
     img: 'img/ma.jpg',
     link: 'ma/index.html',
