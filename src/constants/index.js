@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'MA',
+    img: 'img/ma.jpg',
+    link: 'ma/index.html',
+  },
+  {
     name: 'WIFI SOUNDSCAPES',
     img: 'img/wifi-soundscapes.jpg',
     link: 'wifi-soundscapes/index.html',

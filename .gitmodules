@@ -47,3 +47,6 @@
 [submodule "repos/flux"]
 	path = repos/flux
 	url = https://github.com/codercatclub/flux
+[submodule "repos/ma"]
+	path = repos/ma
+	url = https://github.com/codercatclub/ma

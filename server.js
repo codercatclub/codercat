@@ -108,6 +108,12 @@ const subApps = [
     public: ['repos/flux/out'],
     route: '/flux',
   },
+  {
+    name: 'ma',
+    entry: 'repos/ma/dist/index.html',
+    public: ['repos/ma/dist'],
+    route: '/ma',
+  },
 ];
 
 if (process.env.DEV) {
