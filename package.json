@@ -18,9 +18,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dev": "concurrently --kill-others-on-fail 'react-scripts start' 'export DEV=1; nodemon server.js'",
+    "dev": "export REACT_APP_CODERCAT_SERVER_URL=http://localhost:8081 && concurrently --kill-others-on-fail 'react-scripts start' 'export DEV=1; nodemon server.js'",
     "lint:fix": "eslint --ignore-path .gitignore ./src --fix"
   },
+  "type": "module",
   "devDependencies": {
     "concurrently": "^5.2.0",
     "eslint-config-airbnb": "^18.1.0",
@@ -29,7 +30,6 @@
     "eslint-plugin-react": "^7.19.0",
     "nodemon": "^2.0.3"
   },
-  "proxy": "http://localhost:8081/",
   "browserslist": {
     "production": [
       ">0.2%",
