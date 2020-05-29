@@ -1,5 +1,10 @@
 export const projects = [
   {
+    name: 'MELT',
+    img: 'img/melt.jpg',
+    link: 'melt',
+  },
+  {
     name: 'FLUX',
     img: 'img/flux.jpg',
     link: 'flux',

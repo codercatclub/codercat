@@ -114,6 +114,12 @@ const subApps = [
     public: ['repos/ma/dist'],
     route: '/ma',
   },
+  {
+    name: 'melt',
+    entry: 'repos/melt/dist/index.html',
+    public: ['repos/melt/dist'],
+    route: '/melt',
+  },
 ];
 
 if (process.env.DEV) {

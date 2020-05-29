@@ -50,3 +50,6 @@
 [submodule "repos/ma"]
 	path = repos/ma
 	url = https://github.com/codercatclub/ma
+[submodule "repos/melt"]
+	path = repos/melt
+	url = https://github.com/sneha-belkhale/melt-compute-shader
