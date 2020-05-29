@@ -4,6 +4,7 @@ import projects from './src/constants/projects.js';
 
 const codercat = express();
 const port = 8081;
+const __dirname = path.resolve();
 
 if (process.env.DEV) {
   codercat.use(express.static('public'));

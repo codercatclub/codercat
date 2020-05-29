@@ -16,7 +16,9 @@ export default [
   {
     name: 'MA',
     img: 'img/ma.jpg',
-    route: 'ma/index.html',
+    entry: 'projects/ma/dist/index.html',
+    public: ['projects/ma/dist'],
+    route: 'ma',
   },
   {
     name: 'WIFI SOUNDSCAPES',
