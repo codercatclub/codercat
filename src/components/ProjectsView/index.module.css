@@ -1,5 +1,44 @@
-.featured {
-  height: 352px;
-  background-color: brown;
-  margin: 3px;
+.projectBox {
+  display: inline-block;
+}
+
+.projectLink {
+  position: relative;
+}
+
+.projectLink:hover > .overlay {
+  visibility: visible;
+}
+
+.projectLink:hover > img {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.9; */
+}
+
+.projectTitle {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.9);
+  display: none;
+  letter-spacing: 2px;
+  z-index: 12;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
