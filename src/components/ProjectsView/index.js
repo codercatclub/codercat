@@ -23,6 +23,10 @@ const ProjectsView = () => {
       >
         <div className={s.overlay} style={{ backgroundColor: overlayColor }}>
           <h1 className={s.projectTitle}>{project.name}</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
         <img className={s.img} src={project.img} alt={project.name} />
       </a>
