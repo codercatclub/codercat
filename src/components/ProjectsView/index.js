@@ -8,11 +8,18 @@ const makeProjectLink = (route) =>
 
 const ProjectsView = () => {
   // Coder cat logo colors
-  const overlayColors = ['#610dff', '#ff00ff', '#00fdff', '#fe086d', '#11ff05'];
+  const overlayColors = [
+    '#fffc0d',
+    '#ff00ff',
+    // '#00f5f7',
+    '#fe086d',
+    '#11ff05',
+    '#634dfb',
+  ];
   let colorIndex = 0;
   const projectElements = projects.map((project) => {
     const overlayColor = overlayColors[colorIndex % overlayColors.length];
-    colorIndex ++;
+    colorIndex++;
     return (
       <a
         id="project-box"
@@ -22,10 +29,7 @@ const ProjectsView = () => {
       >
         <div className={s.overlay} style={{ backgroundColor: overlayColor }}>
           <h1 className={s.projectTitle}>{project.name}</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <p className={s.description}>{project.description}</p>
         </div>
         <img className={s.img} src={project.img} alt={project.name} />
       </a>

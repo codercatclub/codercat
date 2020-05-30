@@ -25,9 +25,6 @@
   visibility: hidden;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* opacity: 0.9; */
   padding: 20px;
 }
 
@@ -38,9 +35,8 @@
   letter-spacing: 2px;
   z-index: 12;
   display: flex;
-  /* width: 80%; */
-  /* height: 100%; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* text-align: center; */
+}
+
+.description {
+  line-height: 18px;
 }
