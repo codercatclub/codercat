@@ -8,12 +8,11 @@ const makeProjectLink = (route) =>
 
 const ProjectsView = () => {
   // Coder cat logo colors
-  const overlayColors = ['#ee7a39', '#fc9827', '#f7d72d', '#28d3c2', '#31b2c3'];
-
+  const overlayColors = ['#610dff', '#ff00ff', '#00fdff', '#fe086d', '#11ff05'];
+  let colorIndex = 0;
   const projectElements = projects.map((project) => {
-    const colorIndex = Math.floor(Math.random() * overlayColors.length);
-    const overlayColor = overlayColors[colorIndex];
-
+    const overlayColor = overlayColors[colorIndex % overlayColors.length];
+    colorIndex ++;
     return (
       <a
         id="project-box"
