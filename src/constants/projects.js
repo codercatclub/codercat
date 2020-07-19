@@ -1,5 +1,14 @@
 export default [
+
   {
+    name: 'DIYING TO FIND',
+    description: 'A Web VR promo for our game',
+    img: 'img/dtf.jpg',
+    entry: 'projects/dtf/index.html',
+    public: ['projects/dtf'],
+    route: 'dtf',
+  },
+  { 
     name: 'MELT',
     description:
       'This is how I feel today. Simulating a melting effect by using compute shaders on position and velocity buffers.',
