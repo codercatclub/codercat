@@ -1,8 +1,7 @@
 export default [
-
   {
-    name: 'DIYING TO FIND',
-    description: 'A Web VR promo for our game',
+    name: 'DYING TO FIND',
+    description: 'A Web VR promo for our game, made with a-frame and three.js.',
     img: 'img/dtf.jpg',
     entry: 'projects/dtf/index.html',
     public: ['projects/dtf'],
@@ -41,6 +40,14 @@ export default [
       'Revealing the intangible dimension of WiFi packets with tcpdump and Foxdot. Data was captured on a road trip from LA to Denver.',
     img: 'img/wifi-soundscapes.jpg',
     route: 'wifi-soundscapes/index.html',
+  },
+  {
+    name: 'READ ME',
+    description: 'An experiment of focus, featuring the anti use of eye tracking in the browser. Made with webgazer.js and three.js.',
+    img: 'img/readme.jpg',
+    entry: 'projects/readme/index.html',
+    public: ['projects/readme'],
+    route: 'readme',
   },
   {
     name: 'ALCHEMY PAINTER',
