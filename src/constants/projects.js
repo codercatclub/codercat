@@ -5,7 +5,7 @@ export default [
     img: 'img/dtf.jpg',
     entry: 'projects/dtf/index.html',
     public: ['projects/dtf'],
-    route: 'dtf',
+    route: 'dying-to-find',
   },
   { 
     name: 'MELT',
