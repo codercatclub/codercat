@@ -2,9 +2,9 @@ export default [
   {
     name: 'DYING TO FIND',
     description: 'A Web VR promo for our game, made with a-frame and three.js.',
-    img: 'img/dtf.jpg',
-    entry: 'projects/dtf/index.html',
-    public: ['projects/dtf'],
+    img: 'img/dying-to-find.jpg',
+    entry: 'projects/dying-to-find/index.html',
+    public: ['projects/dying-to-find'],
     route: 'dying-to-find',
   },
   { 
