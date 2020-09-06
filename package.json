@@ -1,7 +1,10 @@
 {
   "name": "codercat",
   "description": "Place fort cats who code",
-  "homepage": "https://codercat.club",
+  "homepage": "https://codercat.tk",
+  "engines": {
+    "node": ">=14.9.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.8",
     "prop-types": "^15.7.2",
