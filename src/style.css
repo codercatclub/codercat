@@ -129,7 +129,8 @@ a {
 
 @media (max-width: 800px) {
   :root {
-    --views-width: 460px;
+    --views-width: 410px;
+    --proj-box-size: 195px;
   }
   #projects-view {
     height: auto;
@@ -156,7 +157,12 @@ a {
     --views-width: 100vw;
     --proj-box-size: 100vw;
   }
+
   #menu-list {
     padding-left: 10px;
+  }
+
+  #project-box {
+    margin: 3px 0 3px 0;
   }
 }
