@@ -1,11 +1,27 @@
 export default [
   {
     name: 'DYING TO FIND',
-    description: 'A Web VR promo for our game, made with a-frame and three.js.',
+    description: 'A moody WebVR piece, where you find yourself stranded in the residues and routines of a past civilization. They may have lost their purpose, but you are dying to find it.',
     img: 'img/dying-to-find.jpg',
     entry: 'projects/dying-to-find/index.html',
     public: ['projects/dying-to-find'],
     route: 'dying-to-find',
+  },
+  {
+    name: 'THE UNDER PRESENTS',
+    description:
+      'In collaboration with Tender Claws. An immersive live theater experience in Virtual Reality.',
+    img: 'img/the-under-presents.png',
+    route: 'https://tenderclaws.com/theunderpresents',
+  },
+  {
+    name: 'MONSTER OR FRIEND',
+    description:
+      'Exploration of Inverse Kinematic animation for procedural creature design in WebVR. Is it a monster or a friend?',
+    img: 'img/monster-or-friend.jpg',
+    entry: 'projects/monster-or-friend/dist/index.html',
+    public: ['projects/monster-or-friend/dist'],
+    route: 'monster-or-friend',
   },
   { 
     name: 'MELT',
@@ -41,6 +57,7 @@ export default [
     img: 'img/wifi-soundscapes.jpg',
     route: 'wifi-soundscapes/index.html',
   },
+
   {
     name: 'READ ME',
     description: 'An experiment of focus, featuring the anti use of eye tracking in the browser. Made with webgazer.js and three.js.',
@@ -71,15 +88,6 @@ export default [
     entry: 'projects/three-body/dist/index.html',
     public: ['projects/three-body/dist'],
     route: 'three-body',
-  },
-  {
-    name: 'MONSTER OR FRIEND',
-    description:
-      'Exploration of Inverse Kinematic animation for procedural creature design in WebVR. Is it a monster or a friend?',
-    img: 'img/monster-or-friend.jpg',
-    entry: 'projects/monster-or-friend/dist/index.html',
-    public: ['projects/monster-or-friend/dist'],
-    route: 'monster-or-friend',
   },
   {
     name: 'AI ANIMATION',
