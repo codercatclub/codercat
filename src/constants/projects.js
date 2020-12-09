@@ -15,6 +15,13 @@ export default [
     route: 'https://tenderclaws.com/theunderpresents',
   },
   {
+    name: 'PURPOSE PRO 2',
+    description:
+      'In collaboration with Justin Beiber. ThreeJS development for a browser skating game -- skate with Justin!',
+    img: 'img/purpose-pro-2.jpg',
+    route: 'https://purposepro.justinbiebermusic.com/',
+  },
+  {
     name: 'MONSTER OR FRIEND',
     description:
       'Exploration of Inverse Kinematic animation for procedural creature design in WebVR. Is it a monster or a friend?',
